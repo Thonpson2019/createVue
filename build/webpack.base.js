@@ -61,13 +61,13 @@ module.exports = {
         // 解决vender后面的hash每次都改变
         new webpack.HashedModuleIdsPlugin(),
         // 处理静态文件夹 static 复制到打包的 static 文件夹
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, '../static'),
-                to: 'static',
-                ignore: ['.*'],
-            },
-        ]),
+        // new CopyWebpackPlugin([
+        //     {
+        //         from: path.resolve(__dirname, '../static'),
+        //         to: 'static',
+        //         ignore: ['.*'],
+        //     },
+        // ]),
 
         // 暂时看不到dll的效果
         /* new AddAssetHtmlWebpackPlugin({
